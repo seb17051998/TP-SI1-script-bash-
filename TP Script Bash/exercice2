@@ -1,0 +1,7 @@
+#!/bin/sh
+echo saisir un nombre entier x
+read x
+n=$((x*x))
+ncube=$((x*x*x))
+echo Voici le carré de ce nombre: $n
+echo Voici le cube de ce nombre: $ncube

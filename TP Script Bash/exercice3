@@ -1,0 +1,34 @@
+#!/bin/sh
+
+echo "Entrer le 1er octet d'une adresse ip"
+read val1
+
+echo "Entrer le 2eme octet d'une adresse ip"
+read val2
+
+echo "Entrer le 3eme octet d'une adresse ip"
+read val3
+
+echo "Entrer le 4eme octet d'une adresse ip"
+read val4
+
+nb=255
+if [ $val1 -le $nb ]
+	then echo "Octet1:$val1 OK"
+	else echo "Octet1:$val1 Incorrect"
+fi
+if [ $val2 -le $nb ]
+	then echo "Octet2:$val2 OK"
+	else echo "Octet2:$val2 Incorrect"
+fi
+if [ $val3 -le $nb ]
+        then echo "Octet3:$val3 OK"
+        else echo "Octet3:$val3 Incorrect"
+fi
+if [ $val4 -le $nb ]
+        then echo "Octet4:$val4 OK"
+        else echo "Octet4:$val4 Incorrect"
+fi
+
+ping $val1.$val2.$val3.$val4
+

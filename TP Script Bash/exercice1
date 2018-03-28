@@ -1,0 +1,12 @@
+#!/bin/sh
+echo "entrer le 1er octet d'une adresse IP." 
+read octet1
+echo "entrer le 2ème octet d'une adresse IP."
+read octet2
+echo "entrer le 3ème octet d'une adresse IP."
+read octet3
+echo "entrer le 4ème octet d'une adresse IP."
+read octet4
+
+echo "octet1 :$octet1 octet2 :$octet2 octet3 :$octet3 octet4 :$octet4"
+echo "L'adresse IP est $octet1.$octet2.$octet3.$octet4"
